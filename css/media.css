@@ -1,0 +1,6 @@
+/*для ie*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	body{
+		padding-right: 10px;
+	}
+}
