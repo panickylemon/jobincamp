@@ -11,37 +11,30 @@ $(document).ready(function ($) {
     }
 
 
-    //$(".b-menu-burger").click(function() {
-    //    //$(".b-menu-burger").hide();
-    //    $(".l-menu").toggle("slide", {direction:"right"}, 500);
-    //    //$(".menuClose").delay(400).fadeIn(100);
-    //    //$(".menu").addClass("zIndex");
-    //});
-
 
     $(".b-menu-burger").click(function() {
         $(".b-menu-burger").hide();
         $(".l-menu").toggle("slide", {direction:"right"}, 500);
-        //$(".menuClose").delay(400).fadeIn(100);
+        $(".b-menu-close").delay(400).fadeIn(100);
         //$(".menu").addClass("zIndex");
     });
 
-    //$(document).click(function (e){
-    //    var menu = $(".menuOpen");
-    //    var burger = $(".menuToggle");
-    //    if (!menu.is(e.target) && !burger.is(e.target)// если клик был не по нашему блоку
-    //        && menu.has(e.target).length === 0 // и не по его дочерним элементам
-    //        && menu.is(':visible')) {
-    //        $(".menuClose").hide();
-    //
-    //        setTimeout(function() {
-    //            $(".menu").removeClass("zIndex");
-    //        }, 500);
-    //
-    //        //burger.show();
-    //        burger.delay(400).fadeIn(100);
-    //        menu.toggle("slide", {direction:"right"}, 500);
-    //    }
-    //});
+    $(document).click(function (e){
+        var menu = $(".l-menu");
+        var burger = $(".b-menu-burger");
+        if (!menu.is(e.target) && !burger.is(e.target)// если клик был не по нашему блоку
+            && menu.has(e.target).length === 0 // и не по его дочерним элементам
+            && menu.is(':visible')) {
+            $(".b-menu-close").hide();
+
+            //setTimeout(function() {
+            //    $(".menu").removeClass("zIndex");
+            //}, 500);
+
+            //burger.show();
+            burger.delay(400).fadeIn(100);
+            menu.toggle("slide", {direction:"right"}, 500);
+        }
+    });
 
 });

@@ -371,6 +371,18 @@ footer {
 	background: url("../image/sprite/menu.png") no-repeat;
 }
 
+.b-menu-close{
+	display: none;
+	position: fixed;
+	z-index: 100;
+	right: 230px;
+	width: 30px;
+	height: 30px;
+	margin-top: 7px;
+	cursor: pointer;
+	background: url("../image/sprite/cancel.png") rgba(0, 0, 0, 0.08) no-repeat center;
+}
+
 /*select in header*/
 
 .select-arrow {
@@ -703,4 +715,16 @@ footer {
 
 .b-search-employees__button {
 	margin-top: 5px;
+}
+
+.l-useful{
+	background: #ffffff;
+}
+
+.b-useful__item{
+	width: 25%;
+}
+
+.b-useful__image{
+	width: 100%;
 }
