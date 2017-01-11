@@ -169,10 +169,26 @@ footer {
 	background: #20394f;
 }
 
+.b-scrolling-bottom{
+	position: relative;
+	top: 100px;
+	left: 50%;
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	background: url("../image/sprite/arrows-round.png") no-repeat bottom center;
+}
+
 /*headers*/
 
 .b-header-index {
-	position: relative;
+	/*position: relative;*/
 	width: 100%;
 	height: 700px;
 	background: url(../image/base/index-cover.png) no-repeat center;
@@ -309,6 +325,16 @@ footer {
 	text-align: center;
 }
 
+.b-menu-burger{
+	display: none;
+	float: right;
+	width: 24px;
+	height: 24px;
+	margin-top: 7px;
+	cursor: pointer;
+	background: url("../image/sprite/menu.png") no-repeat;
+}
+
 /*select in header*/
 
 .select-arrow {
@@ -418,7 +444,11 @@ footer {
 }
 
 .b-search__subject .dropdown-toggle {
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-bottom-left-radius: 8px;
 	border-bottom-left-radius: 8px;
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-top-left-radius: 8px;
 	border-top-left-radius: 8px;
 }
 
@@ -426,7 +456,7 @@ footer {
 	background: rgba(255, 255, 255, 0.80);
 }
 
-.b-search .btn-default:before {
+.b-search__subject .btn-default:before, .b-search__country .btn-default:before  {
 	content: '';
 	position: absolute;
 	right: 0;
@@ -496,10 +526,71 @@ footer {
 	padding: 6px 10px;
 }
 
-.b-employment__button:hover{
+.b-employment__button:hover, .b-employment__button:focus{
 	text-decoration: none;
 	color: #ffffff;
 	background: #46C983;
 }
 
 /*main page*/
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.slideout-menu {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 256px;
+	min-height: 100vh;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	z-index: 0;
+	display: none;
+}
+
+.slideout-menu-left {
+	left: 0;
+}
+
+.slideout-menu-right {
+	right: 0;
+}
+
+.slideout-panel {
+	position: relative;
+	z-index: 1;
+	will-change: transform;
+	background-color: #FFF; /* A background-color is required */
+	min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+	overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+	display: block;
+}
+
+.b-subtitle{
+	margin: 80px 0;
+	font-size: 30px;
+	font-weight: 300;
+	color: #4d414a;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.b-popular-categories__item{
+	float: left;
+	width: 33.33%;
+}
+
+.b-popular-categories__image{
+	width: 100%;
+}

@@ -1,6 +1,205 @@
 /*для ie*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	body{
+	body {
 		padding-right: 10px;
+	}
+}
+
+@media screen and (max-width: 920px) {
+	.l-menu {
+		display: none;
+		float: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 100;
+		width: 220px;
+		height: 100%;
+		margin: 0;
+		border: 1px solid red;
+	}
+
+	.b-menu-burger {
+		display: block;
+	}
+
+	.b-menu__item {
+		width: 100%;
+		padding: 5px 0 0 20px;
+	}
+
+	.b-menu__link:hover, .b-menu__link:focus {
+		border-bottom: none;
+	}
+
+	.l-menu-checkin {
+		float: left;
+		margin-left: 20px;
+	}
+
+	.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+		width: 50%;
+	}
+
+	.b-search__expand {
+		width: 100%;
+		margin-right: -65px;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+	}
+
+	.b-search__button {
+		float: left;
+	}
+
+	.b-search__country .dropdown-toggle {
+		-webkit-border-bottom-right-radius: 8px;
+		-moz-border-bottom-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+		-webkit-border-top-right-radius: 8px;
+		-moz-border-top-right-radius: 8px;
+		border-top-right-radius: 8px;
+	}
+
+	.b-search__country, .b-search__subject {
+		margin-bottom: 20px;
+	}
+
+	.b-header-index__filter {
+		margin-bottom: 50px;
+	}
+
+	.b-scrolling-bottom {
+		top: 60px
+	}
+
+	.b-header-index__title {
+		margin: 50px 0 50px;
+	}
+
+	.b-search__country .btn-default:before  {
+		display: none;
+	}
+
+}
+
+
+@media screen and (max-width: 700px) {
+	.b-header-index__title {
+		font-size: 50px;
+	}
+
+	.bootstrap-select > .dropdown-toggle {
+		padding: 12px 20px 8px;
+	}
+
+	.b-search__subject .btn-default:before  {
+		top: 10px;
+		height: 25px;
+	}
+
+	.dropdown-toggle, .dropdown-menu {
+		font-size: 16px;
+	}
+
+	.b-search__country, .b-search__subject {
+		margin-bottom: 12px;
+	}
+
+	.b-search__button {
+		width: 45px;
+		height: 45px;
+		background: url("../image/sprite/search-mobile.png") no-repeat;
+	}
+
+	.b-search__button:hover, .b-search__button:focus {
+		background: url("../image/sprite/search-mobile.png") no-repeat;
+	}
+	.b-search__expand {
+		margin-right: -45px;
+		padding: 14px 20px 13px;
+	}
+
+    .b-employment__text{
+	    display: none;
+    }
+
+	.b-employment__item {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.b-employment__button{
+		color: #ffffff;
+		background: #46C983;
+	}
+
+	.b-header-index__button{
+		width: 100%;
+		max-width: 200px;
+		padding: 8px 10px;
+	}
+
+    .b-scrolling-bottom{
+	    display: none;
+    }
+
+	.b-header-index {
+		height: 600px;
+		background: url(../image/base/index-cover.png) no-repeat 80% bottom;
+	}
+
+}
+
+
+@media screen and (max-width: 500px) {
+	.b-header-index__title {
+		font-size: 40px;
+	}
+
+	.dropdown-toggle, .dropdown-menu {
+		font-size: 14px;
+	}
+
+	.b-search__expand {
+		padding: 15px 20px 14px;
+		font-size: 14px;
+	}
+}
+
+
+@media screen and (max-width: 340px) {
+	.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+		width: 100%;
+	}
+
+	.b-search__subject .dropdown-toggle, .b-search__country .dropdown-toggle {
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+	}
+
+	.b-header-index__title {
+		margin: 35px 0;
+		font-size: 28px;
+	}
+
+	.b-search__country, .b-search__subject {
+		margin-bottom: 8px;
+	}
+
+	.b-employment__item {
+		margin-bottom: 10px;
+	}
+
+	.b-header-index__filter {
+		margin-bottom: 40px;
+	}
+
+	.b-header-index {
+		height: 540px;
 	}
 }
