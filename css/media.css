@@ -70,8 +70,8 @@
 		margin-bottom: 50px;
 	}
 
-	.b-scrolling-bottom {
-		top: 60px
+	.b-scrolling-bottom--white {
+		top: 180px
 	}
 
 	.b-header-index__title {
@@ -82,7 +82,31 @@
 		display: none;
 	}
 
+	.b-subtitle {
+		margin: 65px 0;
+	}
 }
+
+
+
+@media screen and (max-width: 800px) {
+	.b-popular-categories__item {
+		width: 50%;
+	}
+
+	.b-popular-categories__item--third {
+		display: none;
+	}
+
+	.b-popular-categories__item--second {
+		text-align: right;
+	}
+
+	.b-popular-categories__title {
+		font-size: 20px;
+	}
+}
+
 
 
 @media screen and (max-width: 700px) {
@@ -113,10 +137,15 @@
 		background: url("../image/sprite/search-mobile.png") no-repeat;
 	}
 
+	.dropdown-toggle{
+		height: 44px;
+	}
+
 	.b-search__button:hover, .b-search__button:focus {
 		background: url("../image/sprite/search-mobile.png") no-repeat;
 	}
 	.b-search__expand {
+		height: 45px;
 		margin-right: -45px;
 		padding: 14px 20px 13px;
 	}
@@ -152,6 +181,33 @@
 		background: url(../image/base/index-cover.png) no-repeat 80% bottom;
 	}
 
+	.b-subtitle {
+		 margin: 50px 0;
+		 font-size: 24px;
+	 }
+
+	.b-button-catalog {
+		max-width: 300px;
+		margin: 50px auto;
+		padding: 15px 0;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+	.b-popular-categories__item {
+		float: none;
+		width: 100%;
+	}
+
+	.b-popular-categories__item--first {
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	.b-popular-categories__item--second{
+		text-align: center;
+	}
 }
 
 
@@ -168,6 +224,10 @@
 		padding: 15px 20px 14px;
 		font-size: 14px;
 	}
+
+	.b-subtitle {
+		font-size: 22px;
+	}
 }
 
 
@@ -176,10 +236,20 @@
 		width: 100%;
 	}
 
+	.b-search__subject .btn-default:before  {
+		display: none;
+	}
+
 	.b-search__subject .dropdown-toggle, .b-search__country .dropdown-toggle {
-		-webkit-border-radius: 8px;
-		-moz-border-radius: 8px;
-		border-radius: 8px;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+	}
+
+	.b-search__expand {
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
 	}
 
 	.b-header-index__title {
@@ -202,4 +272,8 @@
 	.b-header-index {
 		height: 540px;
 	}
+
+    .b-button-catalog--hidden{
+	    display: none;
+    }
 }
