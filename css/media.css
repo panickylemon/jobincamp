@@ -5,6 +5,19 @@
 	}
 }
 
+@media screen and (max-width: 990px) {
+	.b-search-employees__image {
+		width: 50%;
+	}
+
+	.b-search-employees__info {
+		width: 50%;
+		padding: 25px 30px 25px;
+	}
+
+
+}
+
 @media screen and (max-width: 920px) {
 	.l-menu {
 		display: none;
@@ -105,6 +118,10 @@
 	.b-popular-categories__title {
 		font-size: 20px;
 	}
+
+	.b-search-employees__subtitle {
+		font-size: 24px;
+	}
 }
 
 
@@ -192,6 +209,18 @@
 		padding: 15px 0;
 	}
 
+	.b-search-employees__text {
+		font-size: 14px;
+	}
+
+	.b-search-employees__info {
+		padding: 20px;
+	}
+
+	.b-search-employees__subtitle {
+		font-size: 22px;
+	}
+
 }
 
 @media screen and (max-width: 520px) {
@@ -207,6 +236,15 @@
 
 	.b-popular-categories__item--second{
 		text-align: center;
+	}
+
+	.b-search-employees__image {
+		width: 100%;
+	}
+
+
+	.b-search-employees__info {
+		width: 100%;
 	}
 }
 
@@ -227,6 +265,10 @@
 
 	.b-subtitle {
 		font-size: 22px;
+	}
+
+	.b-search-employees__subtitle {
+		font-size: 20px;
 	}
 }
 
