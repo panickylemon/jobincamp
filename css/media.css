@@ -376,6 +376,11 @@
 		margin-bottom: 80px;
 	}
 
+	.b-team__item {
+		float: left;
+		width: 50%;
+	}
+
 }
 
 @media screen and (max-width: 670px) {
@@ -515,6 +520,17 @@
 @media screen and (max-width: 475px) {
 	.b-header-about__title {
 		font-size: 26px;
+	}
+
+	.b-team__item {
+		float: none;
+		width: 100%;
+		height: auto;
+		margin-bottom: 40px;
+	}
+
+	.b-button-team {
+		margin: 60px auto 100px;
 	}
 }
 

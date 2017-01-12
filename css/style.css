@@ -1181,7 +1181,44 @@ footer {
 	font-weight: 300;
 }
 
-.b-advantages__button{
+.b-advantages__button {
 	width: 170px;
 	padding: 6px 5px;
+}
+
+.l-team {
+	text-align: center;
+	background: #f5f2ed;
+}
+
+.b-team__item {
+	float: left;
+	width: 33.33%;
+	height: 290px;
+	text-align: center;
+}
+
+.b-team__image {
+	width: 100%;
+	max-width: 145px;
+	border-radius: 50%;
+}
+
+.b-team__name {
+	margin: 25px 0 5px;
+	font-size: 16px;
+	color: #4d414a;
+}
+
+.b-team__description {
+	font-size: 16px;
+	color: #646470;
+}
+
+.b-button-team{
+	width: 100%;
+	max-width: 345px;
+	margin: 60px auto 130px;
+	padding: 20px 0;
+	text-transform: uppercase;
 }
