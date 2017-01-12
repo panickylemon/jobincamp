@@ -172,6 +172,18 @@
 		width: 33.33%;
 	}
 
+	.b-header-base {
+		height: 70px;
+	}
+
+	.l-logo {
+		margin-top: 0;
+	}
+
+	.b-menu-burger {
+		 margin-top: 1px;
+	}
+
 }
 
 @media screen and (min-width: 921px) {

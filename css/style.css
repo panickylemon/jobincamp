@@ -1222,3 +1222,32 @@ footer {
 	padding: 20px 0;
 	text-transform: uppercase;
 }
+
+
+
+
+/*search page*/
+
+.b-header-base{
+	width: 100%;
+	height: 90px;
+	background: url(../image/base/header.png) no-repeat center;
+}
+
+.l-search{
+	background: #f5f2ed;
+}
+
+.l-left-menu{
+	float: left;
+	width: 230px;
+}
+
+.l-main-content{
+	float: left;
+	margin-left: 260px;
+}
+
+.b-left-menu__item{
+	cursor: pointer;
+}
