@@ -17,6 +17,16 @@
 }
 
 
+@media screen and (max-width: 980px) {
+	.b-useful__item--fourth{
+		display: none;
+	}
+
+	.b-useful__item {
+		width: 33.33%;
+	}
+}
+
 
 @media screen and (max-width: 920px) {
 	.l-menu {
@@ -141,6 +151,10 @@
 		bottom: 50px;
 		right: 15px;
 	}
+
+	.b-button-useful {
+		margin: 80px auto;
+	}
 }
 
 @media screen and (min-width: 921px){
@@ -176,6 +190,15 @@
 
 	.b-search-employees__subtitle {
 		font-size: 24px;
+	}
+
+	.b-useful__item--fourth{
+		display: block;
+	}
+
+	.b-useful__item {
+		width: 50%;
+		margin-bottom: 20px;
 	}
 }
 
@@ -320,6 +343,11 @@
 	.b-scrolling-top {
 		bottom: 30px;
 	}
+
+	.b-useful__item {
+		margin-bottom: 13px;
+	}
+
 }
 
 
@@ -392,6 +420,28 @@
 
 	.b-search-employees__subtitle {
 		font-size: 20px;
+	}
+
+	.b-useful__title{
+		font-size: 14px;
+	}
+
+	.b-useful__date {
+		height: 33px;
+		width: 100px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.b-useful__item {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.b-useful__title {
+		font-size: 16px;
 	}
 }
 
@@ -487,5 +537,9 @@
     .b-scrolling-top, .l-footer-menu-checkin{
 	    display: none;
     }
+
+	.b-useful__title {
+		font-size: 14px;
+	}
 
 }

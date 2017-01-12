@@ -921,9 +921,14 @@ footer {
 	opacity: 0.6;
 }
 
+.b-useful__no-image{
+	width: 100%;
+}
+
 .b-useful__link{
 	position: relative;
 	display: inline-block;
+	width: 95%;
 }
 
 .b-useful__link--image{
@@ -946,6 +951,7 @@ footer {
 	transform: translate(-50%, -50%);
 	width: 100%;
 	margin: 0;
+	padding: 0 6px;
 	text-align: center;
 	font-size: 16px;
 	font-weight: 600;
