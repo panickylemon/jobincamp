@@ -173,9 +173,6 @@ input::-moz-placeholder {
 }
 
 .b-scrolling-top {
-	position: absolute;
-	right: 10%;
-	bottom: 71px;
 	display: block;
 	width: 50px;
 	height: 50px;
@@ -183,7 +180,16 @@ input::-moz-placeholder {
 }
 
 .b-scrolling-top--green {
+	position: absolute;
+	right: 10%;
+	bottom: 71px;
 	background: url("../image/sprite/arrows-round.png") no-repeat center center;
+}
+
+.b-scrolling-top--grey{
+	margin: 50px auto;
+	text-align: center;
+	background: url("../image/sprite/arrows-round.png") no-repeat 0 center;
 }
 
 .b-base-button {
@@ -1603,6 +1609,7 @@ footer {
 	color: #646470;
 }
 
+
 .b-short-card__text--border{
 	border-bottom: 1px solid #848491;
 }
@@ -1629,4 +1636,53 @@ footer {
 
 .b-hidden-button:hover, .b-hidden-button:focus {
 	color: #a2a2b5;
+}
+
+.b-search-pagination__link{
+	display: inline-block;
+	float: left;
+	vertical-align: bottom;
+	text-align: center;
+	height: 45px;
+	width: 45px;
+	margin: 0 1px;
+	padding: 12px 0;
+	font-size: 16px;
+	font-weight: 600;
+	background: #ffffff;
+	color: #a2a2b5;
+	cursor: pointer;
+}
+
+.b-search-pagination__link:hover, .b-search-pagination__link:focus{
+	color: #a2a2b5;
+	text-decoration: none;
+}
+
+.b-search-pagination__quantity{
+	display: inline-block;
+	padding: 12px 0 12px 23px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #a2a2b5;
+}
+
+.b-search-pagination{
+	float: right;
+}
+
+.b-search-pagination__previous-icon{
+	display: inline-block;
+	width: 12px;
+	height: 15px;
+	margin-bottom: -2px;
+	background: url("../image/sprite/arrows-left-right.png") no-repeat 0 50%;
+}
+
+.b-search-pagination__next-icon{
+	display: inline-block;
+	width: 12px;
+	height: 15px;
+	margin-bottom: -2px;
+	background: url("../image/sprite/arrows-left-right.png") no-repeat 50% 0;
 }
