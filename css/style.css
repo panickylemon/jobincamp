@@ -116,6 +116,8 @@ input[type="radio"] {
 }
 
 input[placeholder] {
+	color: #646470;
+	font-size: 16px;
 	text-overflow: ellipsis;
 }
 
@@ -127,6 +129,25 @@ input::-webkit-input-placeholder {
 
 input::-moz-placeholder {
 	color: #646470;
+	opacity: 1 !important;
+	font-size: 16px;
+	text-overflow: ellipsis;
+}
+
+input.b-left-menu__input[placeholder] {
+	color: #a2a2b5;
+	font-size: 16px;
+	text-overflow: ellipsis;
+}
+
+input.b-left-menu__input::-webkit-input-placeholder {
+	color: #a2a2b5;
+	font-size: 16px;
+	text-overflow: ellipsis;
+}
+
+input.b-left-menu__input::-moz-placeholder {
+	color: #a2a2b5;
 	opacity: 1 !important;
 	font-size: 16px;
 	text-overflow: ellipsis;
@@ -186,7 +207,7 @@ input::-moz-placeholder {
 	background: url("../image/sprite/arrows-round.png") no-repeat center center;
 }
 
-.b-scrolling-top--grey{
+.b-scrolling-top--grey {
 	margin: 50px auto;
 	text-align: center;
 	background: url("../image/sprite/arrows-round.png") no-repeat 0 center;
@@ -1603,14 +1624,13 @@ footer {
 	color: #46C983;
 }
 
-.b-short-card__text{
+.b-short-card__text {
 	font-size: 16px;
 	font-weight: 300;
 	color: #646470;
 }
 
-
-.b-short-card__text--border{
+.b-short-card__text--border {
 	border-bottom: 1px solid #848491;
 }
 
@@ -1638,7 +1658,7 @@ footer {
 	color: #a2a2b5;
 }
 
-.b-search-pagination__link{
+.b-search-pagination__link {
 	display: inline-block;
 	float: left;
 	vertical-align: bottom;
@@ -1654,12 +1674,12 @@ footer {
 	cursor: pointer;
 }
 
-.b-search-pagination__link:hover, .b-search-pagination__link:focus{
+.b-search-pagination__link:hover, .b-search-pagination__link:focus {
 	color: #a2a2b5;
 	text-decoration: none;
 }
 
-.b-search-pagination__quantity{
+.b-search-pagination__quantity {
 	display: inline-block;
 	padding: 12px 0 12px 23px;
 	font-size: 16px;
@@ -1667,11 +1687,11 @@ footer {
 	color: #a2a2b5;
 }
 
-.b-search-pagination{
+.b-search-pagination {
 	float: right;
 }
 
-.b-search-pagination__previous-icon{
+.b-search-pagination__previous-icon {
 	display: inline-block;
 	width: 12px;
 	height: 15px;
@@ -1679,10 +1699,45 @@ footer {
 	background: url("../image/sprite/arrows-left-right.png") no-repeat 0 50%;
 }
 
-.b-search-pagination__next-icon{
+.b-search-pagination__next-icon {
 	display: inline-block;
 	width: 12px;
 	height: 15px;
 	margin-bottom: -2px;
 	background: url("../image/sprite/arrows-left-right.png") no-repeat 50% 0;
 }
+
+.b-left-menu__search{
+	margin-top: -8px;
+}
+
+.b-left-menu__input {
+	display: block;
+	width: 100%;
+	height: 45px;
+	padding-left: 15px;
+	outline: none;
+	border: none;
+	color: #646470;
+	font-size: 16px;
+}
+
+.b-left-menu__button-search{
+	display: block;
+	width: 100%;
+	height: 45px;
+	margin-top: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+	color: #ffffff;
+	font-size: 16px;
+	background: #46c983;
+	outline: none;
+}
+
+.b-left-menu__button-search:hover, .b-left-menu__button-search:focus{
+	background: #4DDE90;
+}
+
+
