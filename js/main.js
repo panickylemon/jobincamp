@@ -51,7 +51,7 @@ $(document).ready(function ($) {
 
     //$(document).ready(function() {
     //    $("a.b-scrolling-bottom").click(function() {
-    //        var elementClick = $(this).attr("href")
+    //        var elementClick = $(this).attr("href");
     //        var destination = $(elementClick).offset().top;
     //        jQuery("html:not(:animated),body:not(:animated)").animate({
     //            scrollTop: destination
@@ -62,7 +62,6 @@ $(document).ready(function ($) {
 
 
 
-
     $('.collapse').on('shown.bs.collapse', function(){
         $(this).parent().find(".b-left-menu__arrow--bottom").removeClass("b-left-menu__arrow--bottom").addClass("b-left-menu__arrow--top");
     }).on('hidden.bs.collapse', function(){
@@ -70,5 +69,16 @@ $(document).ready(function ($) {
     });
 
 
+    $(".b-search-sorting__button").click(function() {
+        $(".b-search-sorting__criteria").slideToggle("slow");
+        $(".b-search-sorting").addClass("b-search-sorting--grey");
+        $(".b-search-sorting__button--grey").removeClass("b-search-sorting__button--grey").addClass("b-search-sorting__button--white");
+
+        $(".b-search-sorting__button--white").removeClass("b-search-sorting__button--white").addClass("b-search-sorting__button--grey");
+
+        //$( "b-search-sorting__button" ).hasClass( "b-search-sorting__button--white").removeClass("b-search-sorting__button--white").addClass("b-search-sorting__button--grey");
+    });
+
 
 });
+
