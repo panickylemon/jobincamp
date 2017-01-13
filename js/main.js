@@ -60,4 +60,15 @@ $(document).ready(function ($) {
     //    });
     //});
 
+
+
+
+    $('.collapse').on('shown.bs.collapse', function(){
+        $(this).parent().find(".b-left-menu__arrow--bottom").removeClass("b-left-menu__arrow--bottom").addClass("b-left-menu__arrow--top");
+    }).on('hidden.bs.collapse', function(){
+        $(this).parent().find(".b-left-menu__arrow--top").removeClass("b-left-menu__arrow--top").addClass("b-left-menu__arrow--bottom");
+    });
+
+
+
 });
