@@ -5,6 +5,21 @@
 	}
 }
 
+@media screen and (max-width: 1140px) {
+	.b-search-sorting__button:hover:after {
+		right: 70px;
+		top: 25px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+	.b-contact__button {
+		position: static;
+		margin: 20px 0 20px;
+	}
+}
+
 @media screen and (max-width: 990px) {
 	.b-search-employees__image {
 		width: 50%;
@@ -181,7 +196,7 @@
 	}
 
 	.b-menu-burger {
-		 margin-top: 1px;
+		margin-top: 1px;
 	}
 
 }
@@ -197,6 +212,33 @@
 
 	.b-menu-burger {
 		display: none !important;
+	}
+}
+
+
+@media screen and (min-width: 901px) {
+	.l-left-menu {
+		display: block !important;
+	}
+
+	.b-mobile-button{
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.l-left-menu {
+		display: none;
+		float: none;
+		width: 100%;
+	}
+
+	.b-mobile-button{
+		display: block;
+	}
+
+	.l-main-content {
+		margin-left: 0;
 	}
 }
 

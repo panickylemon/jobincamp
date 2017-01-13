@@ -1259,13 +1259,12 @@ footer {
 }
 
 .l-main-content {
-	/*float: left;*/
 	margin-left: 245px;
 	margin-top: 25px;
 }
 
 .b-left-menu {
-	width: 225px;
+	width: 100%;
 	padding: 0;
 }
 
@@ -1400,6 +1399,10 @@ footer {
 	color: #ffffff;
 }
 
+.b-search-sorting__button.j-hidden:after {
+	display: none;
+}
+
 .b-search-sorting__button::after:hover {
 	text-decoration: none;
 }
@@ -1440,7 +1443,7 @@ footer {
 
 .b-short-card__main {
 	position: relative;
-	height: 225px;
+	min-height: 225px;
 	background: #ffffff;
 }
 
@@ -1741,3 +1744,16 @@ footer {
 }
 
 
+.b-mobile-button{
+	display: none;
+	width: 100%;
+	height: 45px;
+	margin-top: 25px;
+	line-height: 45px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 16px;
+	background: #46c983;
+	cursor: pointer;
+}
