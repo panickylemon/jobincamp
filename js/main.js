@@ -37,7 +37,7 @@ $(document).ready(function ($) {
     });
 
 
-    $('a.b-scrolling-top, a.b-scrolling-bottom').click(function () {
+    $('a.b-scrolling-top, a.b-scrolling-bottom, .b-scrolling').click(function () {
         var el = $(this).attr('href');
         $('body').animate({
             scrollTop: $(el).offset().top
