@@ -1870,14 +1870,8 @@ footer {
 	margin-top: 47px;
 }
 
-.l-card-content {
-	/*margin-left: 155px;*/
-	/*margin-top: 35px;*/
-}
-
 .b-card-menu {
 	position: absolute;
-	width: 100%;
 	padding: 50px 0 0;
 }
 
@@ -2025,6 +2019,7 @@ footer {
 	min-height: 225px;
 	padding: 0 25px;
 	background: #ffffff;
+	font-weight: 300;
 }
 
 .b-card-info__main {
@@ -2065,12 +2060,18 @@ footer {
 
 .b-card-info__text {
 	font-size: 16px;
+	color: #646470;
 }
 
 .b-card-info__text--grey {
 	margin-top: -5px;
 	color: #a2a2b5;
 	font-weight: 300;
+}
+
+
+.b-card-info__text--green{
+	color: #46c983;
 }
 
 .b-card-info__text--grey a {
@@ -2083,6 +2084,8 @@ footer {
 
 .b-card-info__list {
 	padding: 0 0 0 19px;
+	font-size: 16px;
+	color: #646470;
 }
 
 .b-card-info__social-link {

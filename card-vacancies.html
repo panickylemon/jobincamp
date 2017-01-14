@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Jobincamp</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel='stylesheet' href='css/normalize.css'>
+	<link rel='stylesheet' href='css/bootstrap-select.min.css'>
+	<link rel='stylesheet' href='css/style.css'>
+	<link rel='stylesheet' href='css/media.css'>
+	<script src="js/jquery-2.0.0.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/main.js"></script>
+
+</head>
+<body>
+
+<div class="l-wrapper" id="b-first">
+	<header class="b-header-base">
+		<div class="l-container">
+			<div class="b-header clearfix">
+				<a class="l-logo" href="#">
+					<img src="image/base/logo.png" alt="логотип">
+				</a>
+
+				<div class="b-menu-burger"></div>
+				<div class="b-menu-close"></div>
+				<nav class="l-menu clearfix">
+					<ul class="b-menu">
+						<li class="b-menu__item">
+							<a class="b-menu__link" href="#">вакансии</a>
+						</li>
+						<li class="b-menu__item">
+							<a class="b-menu__link" href="#">резюме</a>
+						</li>
+						<li class="b-menu__item">
+							<a class="b-menu__link" href="#">лагеря</a>
+						</li>
+						<li class="b-menu__item">
+							<a class="b-menu__link" href="#">школы вожатых</a>
+						</li>
+						<li class="b-menu__item">
+							<a class="b-menu__link b-menu__link--active" href="#">полезное</a>
+						</li>
+						<li class="b-menu__item">
+							<a class="b-menu__link" href="#">о проекте</a>
+						</li>
+					</ul>
+					<div class="l-menu-checkin">
+						<a class="b-menu-checkin b-menu-checkin__enter" href="#">
+							войти
+						</a>
+						<a class="b-menu-checkin b-menu-checkin__out" href="#">
+							<span class="b-menu-checkin__text">выйти</span>
+						</a>
+					</div>
+				</nav>
+			</div>
+
+		</div>
+	</header>
+
+	<main class="content">
+		<div class="l-card">
+			<div class="l-card-container">
+				<div class="l-card-menu">
+					<ul class="b-card-menu">
+						<li class="b-card-menu__item">
+							<a class="b-card-menu__link b-card-menu__link--active b-scrolling" href="#b-first-point">
+								Общие данные
+							</a>
+						</li>
+						<li class="b-card-menu__item">
+							<a class="b-card-menu__link b-scrolling" href="#b-second-point">
+								Расположение
+							</a>
+						</li>
+						<li class="b-card-menu__item">
+							<a class="b-card-menu__link b-scrolling" href="#b-third-point">
+								Требования
+							</a>
+						</li>
+						<li class="b-card-menu__item">
+							<a class="b-card-menu__link b-scrolling" href="#b-fourth-point">
+								Условия
+							</a>
+						</li>
+						<li class="b-card-menu__item">
+							<a class="b-card-menu__link b-scrolling" href="#b-fifth-point">
+								О вакансии
+							</a>
+						</li>
+						<li class="b-card-menu__item">
+							<a class="b-card-menu__link b-scrolling" href="#b-sixth-point">
+								Отзывы
+							</a>
+						</li>
+
+					</ul>
+
+				</div>
+				<div class="l-container">
+					<div class="b-card">
+
+
+						<div class="l-card-content">
+
+							<div class="b-card__top-panel clearfix">
+
+								<ul class="b-card__breadcrumb b-breadcrumb breadcrumb">
+									<li class="b-breadcrumb__item"><a class="b-breadcrumb__link" href="#">Вакансии</a>
+									</li>
+									<li class="b-breadcrumb__item active">Спасатель в лагерь “Крот”</li>
+								</ul>
+								<div class="b-card__top-pagination clearfix">
+									<a class="b-cars-previous">
+										<span class="b-cars-previous__icon"></span>
+										<span class="b-cars-previous__text">предыдущая вакансия</span>
+									</a>
+									<a class="b-cars-next">
+										<span class="b-cars-next__text">следующая вакансия</span>
+										<span class="b-cars-next__icon"></span>
+									</a>
+								</div>
+							</div>
+
+							<div class="b-card-info">
+								<div class="clearfix b-card-info__top-line" id="b-first-point">
+									<div class="b-short-card b-card-info__main b-top-line__item">
+										<div class="b-short-card__main ">
+											<div class="b-short-card__image">
+												<img class="b-short-card__photo" src="image/base/search-example.png"
+												     alt="лагерь">
+
+												<div class="b-short-card__liked"
+												     data-title="Добавить в избранное"></div>
+
+												<div class="b-short-card__panel">
+													<div class="b-short-card__review b-card-review">
+														<div class="b-card-review__stars b-stars clearfix">
+															<div class="b-stars__item b-stars__item--white"></div>
+															<div class="b-stars__item b-stars__item--white"></div>
+															<div class="b-stars__item b-stars__item--white"></div>
+															<div class="b-stars__item b-stars__item--white"></div>
+															<div class="b-stars__item b-stars__item--empty"></div>
+														</div>
+														<p class="b-card-review__description">
+															<span class="b-card-review__number">999</span>
+															<span class="b-card-review__text">отзывов</span>
+														</p>
+													</div>
+													<div class="b-short-card__additional b-additional">
+														<!--<span-->
+														<!--class="b-additional__certificate"-->
+														<!--data-title="Выдача сертификатов">-->
+														<!--</span>-->
+														<!--<span-->
+														<!--class="b-additional__employment"-->
+														<!--data-title="Трудоустройство">-->
+														<!--</span>-->
+												<span class="b-additional__date" data-title="Дата публикации">Сегодня
+												</span>
+													</div>
+												</div>
+											</div>
+
+											<div class="b-short-card__content">
+												<h1 class="b-short-card__title">
+													Спасатель
+												</h1>
+
+												<p class="b-short-card__place">Симферополь, Россия</p>
+
+												<p class="b-short-card__price">14000 руб / смена</p>
+
+												<p class="b-short-card__social-network">
+													<a class="b-short-card__social-link" href="#">facebook</a>
+													<span class="b-short-card__delimiter"></span>
+													<a class="b-short-card__social-link" href="#">twitter</a>
+													<span class="b-short-card__delimiter"></span>
+													<a class="b-short-card__social-link" href="#">vkontakte</a>
+													<span class="b-short-card__delimiter"></span>
+													<a class="b-short-card__social-link" href="#">instagram</a>
+												</p>
+												<a class="b-base-button b-card-info__button" href="#">
+													связаться</a>
+											</div>
+										</div>
+									</div>
+									<div class="b-type-camp b-top-line__item">
+										<p class="b-card-info__subtitle">
+											Зарплата
+										</p>
+
+										<p class="b-card-info__text">
+											Первая смена (15 дней, 16-31 августа):
+											<span class="b-card-info__text--green">14000 рублей</span>;
+										</p>
+
+										<p class="b-card-info__text">
+											Вторая смена (10 дней, 1-11 сентября):
+											<span class="b-card-info__text--green">14000 рублей</span>;
+										</p>
+									</div>
+								</div>
+
+								<div class="b-card-info__item" id="b-second-point">
+									<p class="b-card-info__subtitle">
+										Расположение
+									</p>
+
+									<div class="b-wrap-icon-block clearfix">
+										<img class="b-card-info__icon" src="image/base/lager-2.png" alt="лагерь">
+
+										<div class="b-wrap-icon-block__text">
+											<p class="b-card-info__text">
+												<span>Школа балетмейстеров в Крыму</span>
+												<span class="b-short-card__delimiter"></span>
+												<span>сертификат вожатого</span>
+											</p>
+
+											<p class="b-card-info__text b-card-info__text--grey">
+												<span>Лагерь “Мозамбик”. Алушта, Россия</span>
+												<span class="b-short-card__delimiter"></span>
+												<span>декабрь 2016</span>
+											</p>
+											<a class="b-base-button b-base-button--light" href="#">
+												перейти на страницу лагеря</a>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="b-card-info__item" id="b-third-point">
+									<p class="b-card-info__subtitle">
+										Требования
+									</p>
+									<ul class="b-card-info__list">
+										<li>
+											Владение языками: русский, английский
+										</li>
+										<li>
+											Умение хорошо плавать
+										</li>
+									</ul>
+								</div>
+
+								<div class="b-card-info__item" id="b-fourth-point">
+									<p class="b-card-info__subtitle">
+										Условия работы и оплаты
+									</p>
+
+
+									<p class="b-card-info__text">
+										Nous avons beaucoup apprécié la situation de la maison proche de l'aéroport.
+										Très
+										pratique pour prendre notre avion le lendemain matin. Nous avons aussi beaucoup
+										apprécié la décoration de la maison et de la chambre, ainsi que l'équipement de
+										la
+										cuisine. Nous recommandons vivement ce logement.
+									</p>
+
+								</div>
+
+								<div class="b-card-info__item" id="b-fifth-point">
+									<p class="b-card-info__subtitle">
+										О вакансии
+									</p>
+
+
+									<p class="b-card-info__text">
+										Nous avons beaucoup apprécié la situation de la maison proche de l'aéroport.
+										Très
+										pratique pour prendre notre avion le lendemain matin. Nous avons aussi beaucoup
+										apprécié la décoration de la maison et de la chambre, ainsi que l'équipement de
+										la
+										cuisine. Nous recommandons vivement ce logement.
+									</p>
+
+									<p class="b-card-info__social-network">
+										<a class="b-card-info__social-link" href="#">facebook</a>
+										<span class="b-short-card__delimiter"></span>
+										<a class="b-card-info__social-link" href="#">twitter</a>
+										<span class="b-short-card__delimiter"></span>
+										<a class="b-card-info__social-link" href="#">vkontakte</a>
+										<span class="b-short-card__delimiter"></span>
+										<a class="b-card-info__social-link" href="#">instagram</a>
+									</p>
+
+									<a class="b-base-button b-card-info__button" href="#">
+										откликнуться</a>
+								</div>
+
+								<div class="b-card-info__item b-card-info__reviews" id="b-sixth-point">
+									<p class="b-card-info__subtitle b-subtitle__reviews">
+										Отзывы о лагере
+									</p>
+
+									<div class="b-rating clearfix">
+										<div class="b-rating clearfix">
+											<div class="b-rating__item b-rating__item--green"></div>
+											<div class="b-rating__item b-rating__item--green"></div>
+											<div class="b-rating__item b-rating__item--green"></div>
+											<div class="b-rating__item b-rating__item--green"></div>
+											<div class="b-rating__item b-rating__item--empty"></div>
+										</div>
+										<p class="b-rating__description">
+											<span class="b-rating__number">18</span>
+											<span class="b-rating__text">отзывов</span>
+										</p>
+									</div>
+
+									<div class="b-wrap-icon-block b-item-many clearfix">
+										<img class="b-card-info__icon" src="image/base/lager-2.png" alt="лагерь">
+
+										<div class="b-wrap-icon-block__text">
+											<p class="b-card-info__text">
+												Great man, easy going very friendly! I recommend him!
+											</p>
+
+											<p class="b-card-info__text b-card-info__text--grey">
+												<span>Антон, генеральный директор</span>
+												<span class="b-short-card__delimiter"></span>
+												<a href="#" class="b-card-info__link">Лагерь “Мозамбик”</a>
+												<span class="b-short-card__delimiter"></span>
+												<span>Фунчай, Португалиz</span>
+												<span class="b-short-card__delimiter"></span>
+												<span>6 декабря 2016</span>
+											</p>
+										</div>
+
+									</div>
+
+									<div class="b-wrap-icon-block b-item-many clearfix">
+										<img class="b-card-info__icon" src="image/base/lager-2.png" alt="лагерь">
+
+										<div class="b-wrap-icon-block__text">
+											<p class="b-card-info__text">
+												Nous avons beaucoup apprécié la situation de la maison proche de
+												l'aéroport.
+												Très pratique pour prendre notre avion le lendemain matin. Nous avons
+												aussi
+												beaucoup apprécié la décoration de la maison et de la chambre, ainsi que
+												l'équipement de la cuisine. Nous recommandons vivement ce logement.
+											</p>
+
+											<p class="b-card-info__text b-card-info__text--grey">
+												<a href="#" class="b-card-info__link">Лагерь “Мозамбик”</a>
+												<span class="b-short-card__delimiter"></span>
+												<span>Фунчай, Португалия</span>
+												<span class="b-short-card__delimiter"></span>
+												<span>6 декабря 2016</span>
+											</p>
+										</div>
+									</div>
+
+									<div class="b-wrap-icon-block b-item-many clearfix">
+										<img class="b-card-info__icon" src="image/base/lager-2.png" alt="лагерь">
+
+										<div class="b-wrap-icon-block__text">
+											<p class="b-card-info__text">
+												Great man, easy going very friendly! I recommend him!
+											</p>
+
+											<p class="b-card-info__text b-card-info__text--grey">
+												<span>Антон, генеральный директор</span>
+												<span class="b-short-card__delimiter"></span>
+												<a href="#" class="b-card-info__link">Лагерь “Мозамбик”</a>
+												<span class="b-short-card__delimiter"></span>
+												<span>Фунчай, Португалиz</span>
+												<span class="b-short-card__delimiter"></span>
+												<span>6 декабря 2016</span>
+											</p>
+										</div>
+
+									</div>
+
+									<div class="b-wrap-icon-block b-item-many b-item-many__last clearfix">
+										<img class="b-card-info__icon" src="image/base/lager-2.png" alt="лагерь">
+
+										<div class="b-wrap-icon-block__text">
+											<p class="b-card-info__text">
+												Nous avons beaucoup apprécié la situation de la maison proche de
+												l'aéroport.
+												Très pratique pour prendre notre avion le lendemain matin. Nous avons
+												aussi
+												beaucoup apprécié la décoration de la maison et de la chambre, ainsi que
+												l'équipement de la cuisine. Nous recommandons vivement ce logement.
+											</p>
+
+											<p class="b-card-info__text b-card-info__text--grey">
+												<a href="#" class="b-card-info__link">Лагерь “Мозамбик”</a>
+												<span class="b-short-card__delimiter"></span>
+												<span>Фунчай, Португалия</span>
+												<span class="b-short-card__delimiter"></span>
+												<span>6 декабря 2016</span>
+											</p>
+										</div>
+									</div>
+
+									<div class="l-review-pagination clearfix">
+										<div class="b-review-pagination">
+											<a
+													class="b-search-pagination__previous b-search-pagination__link b-review-pagination__link">
+												<span class="b-search-pagination__previous-icon"></span>
+											</a>
+											<a class="b-search-pagination__current b-search-pagination__link b-review-pagination__link">2</a>
+											<a class="b-search-pagination__next b-search-pagination__link b-review-pagination__link">
+												<span class="b-search-pagination__next-icon"></span>
+											</a>
+
+											<p class="b-search-pagination__quantity">
+												<span>из</span>
+												<span class="b-search-pagination__number">337</span>
+											</p>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="b-card__bottom-pagination clearfix">
+								<a class="b-cars-previous">
+									<span class="b-cars-previous__icon"></span>
+									<span class="b-cars-previous__text">предыдущая вакансия</span>
+								</a>
+								<a class="b-cars-next">
+									<span class="b-cars-next__text">следующая вакансия</span>
+									<span class="b-cars-next__icon"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<a class="b-scrolling-top b-scrolling-top--grey" href="#b-first"></a>
+
+
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+</div>
+
+<footer>
+	<div class="l-container">
+		<div class="b-footer clearfix">
+			<a class="l-logo" href="#">
+				<img src="image/base/logo.png" alt="логотип">
+			</a>
+
+			<nav class="l-footer-menu clearfix">
+				<ul class="b-footer-menu">
+					<li class="b-footer-menu__item">
+						<a class="b-footer-menu__link" href="#">вакансии</a>
+					</li>
+					<li class="b-footer-menu__item">
+						<a class="b-footer-menu__link" href="#">резюме</a>
+					</li>
+					<li class="b-footer-menu__item">
+						<a class="b-footer-menu__link" href="#">лагеря</a>
+					</li>
+					<li class="b-footer-menu__item">
+						<a class="b-footer-menu__link" href="#">школы вожатых</a>
+					</li>
+					<li class="b-footer-menu__item">
+						<a class="b-footer-menu__link b-menu__link--active" href="#">полезное</a>
+					</li>
+					<li class="b-footer-menu__item">
+						<a class="b-footer-menu__link" href="#">о проекте</a>
+					</li>
+				</ul>
+				<div class="l-footer-menu-checkin">
+					<a class="b-footer-menu-checkin b-footer-menu-checkin__enter" href="#">
+						войти
+					</a>
+					<a class="b-footer-menu-checkin b-footer-menu-checkin__out" href="#">
+						<span class="b-footer-menu-checkin__text">выйти</span>
+					</a>
+				</div>
+			</nav>
+
+			<div class="b-footer-filter">
+				<form class="b-search clearfix">
+					<select name="subject" class="selectpicker b-search__subject">
+						<option>Я ищу...</option>
+						<option>Работу</option>
+						<option>Сотрудника</option>
+						<option>Школу вожатых</option>
+					</select>
+
+					<select name="country" class="selectpicker b-search__country">
+						<option>Страна...</option>
+						<option>Россия</option>
+						<option>Бразилия</option>
+						<option>Канада</option>
+					</select>
+					<input class="b-search__expand" type="search" placeholder="расширенный поиск">
+					<input class="b-search__button" name="submit" type="submit" value="">
+				</form>
+			</div>
+
+			<div class="b-footer-contact clearfix">
+				<div class="b-footer-contact__item">
+					<p class="b-footer-contact__email">info@jobincamp.ru</p>
+				</div>
+				<div class="b-footer-contact__item">
+					<p class="b-footer-contact__phone">+7 812 555-55-55</p>
+				</div>
+				<div class="b-footer-contact__item">
+					<a class="b-footer-contact__feedback">обратная связь</a>
+				</div>
+			</div>
+			<div class="b-footer-social-network clearfix">
+				<div class="b-footer-social-network__item">
+					<a class="b-footer-social-network__link b-footer-social-network__vk"></a>
+				</div>
+				<div class="b-footer-social-network__item">
+					<a class="b-footer-social-network__link b-footer-social-network__instagram"></a>
+				</div>
+				<div class="b-footer-social-network__item">
+					<a class="b-footer-social-network__link b-footer-social-network__facebook"></a>
+				</div>
+			</div>
+			<a class="b-scrolling-top b-scrolling-top--green" href="#b-first"></a>
+		</div>
+
+	</div>
+</footer>
+
+</body>
+</html>
