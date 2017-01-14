@@ -83,40 +83,5 @@ $(document).ready(function ($) {
     });
 
 
-    //
-    //function resizeResultItem(selecter) {
-    //    var max_height = $(".b-card-info").height();
-    //    $(selecter).each(function () {
-    //        $(this).height(max_height);
-    //    });
-    //}
-    //$(window).resize(function(){
-    //    resizeResultItem(".b-card-info__item");
-    //});
-    //$(window).load(function(){
-    //    resizeResultItem(".b-card-info__item");
-    //});
-
-
-    //function resizeResultItem(selecter) {
-    //    var max_height = 0;
-    //    $(selecter).each(function () {
-    //        var item_height =  $(this).outerHeight();
-    //        if (item_height > max_height) {
-    //            max_height = item_height;
-    //
-    //        }
-    //    });
-    //    $(selecter).each(function () {
-    //        $(this).height(max_height);
-    //    });
-    //}
-    //$(window).resize(function(){
-    //    resizeResultItem(".zz");
-    //});
-    //$(window).load(function(){
-    //    resizeResultItem(".zz");
-    //});
-
 });
 
