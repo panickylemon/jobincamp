@@ -16,7 +16,7 @@
 @media screen and (max-width: 1000px) {
 	.b-contact__button {
 		position: static;
-		margin: 20px 0 20px;
+		margin: 15px 0 15px;
 	}
 
 	.b-more-button {
@@ -220,13 +220,12 @@
 	}
 }
 
-
 @media screen and (min-width: 901px) {
 	.l-left-menu {
 		display: block !important;
 	}
 
-	.b-mobile-button{
+	.b-mobile-button {
 		display: none !important;
 	}
 }
@@ -238,7 +237,7 @@
 		width: 100%;
 	}
 
-	.b-mobile-button{
+	.b-mobile-button {
 		display: block;
 	}
 
@@ -452,6 +451,10 @@
 		font-size: 14px;
 	}
 
+	.b-short-card__price, .b-short-card__profession {
+		font-size: 14px;
+	}
+
 	.b-contact__button {
 		margin: 15px 0 15px;
 	}
@@ -546,6 +549,15 @@
 	.b-short-card__social-network {
 		margin: 15px 0 0;
 	}
+
+	.b-short-card__price, .b-short-card__profession {
+		margin: 10px 0 -10px;
+	}
+
+    .b-additional__school, .b-additional__school+.b-additional__text{
+	    display: none;
+    }
+
 }
 
 @media screen and (max-width: 560px) {
@@ -644,6 +656,15 @@
 		position: absolute;
 		padding: 0;
 		bottom: 22px;
+	}
+
+	.b-additional__employment:hover::after, .b-additional__certificate:hover::after, .b-short-card__liked:hover::after,
+	.b-search-sorting__button:hover:after {
+		display: none;
+	}
+
+	.b-additional__school, .b-additional__school+.b-additional__text{
+		display: block;
 	}
 }
 
@@ -829,9 +850,9 @@
 		font-size: 14px;
 	}
 
-    .b-search-top-panel__text, .b-search-top-panel__number{
-	    display: none;
-    }
+	.b-search-top-panel__text, .b-search-top-panel__number {
+		display: none;
+	}
 
 	.b-more-button {
 		position: static;
