@@ -2129,13 +2129,14 @@ footer {
 	text-decoration: none;
 }
 
-.b-item-review {
+.b-item-many {
 	padding-top: 10px;
 	padding-bottom: 25px;
 	border-bottom: 1px solid #d0d0e8;
 }
 
-.b-item-review__last {
+.b-item-many__last {
+	padding-bottom: 10px;
 	border-bottom: none;
 }
 
@@ -2155,7 +2156,7 @@ footer {
 }
 
 .l-review-pagination{
-	margin: 10px 0 20px;
+	margin: 20px 0 20px;
 }
 
 .b-card__bottom-pagination{
