@@ -554,7 +554,7 @@
 		margin: 10px 0 -10px;
 	}
 
-    .b-additional__school, .b-additional__school+.b-additional__text{
+    .b-additional__school, .b-additional__school+.b-additional__text, .b-additional__date{
 	    display: none;
     }
 
@@ -663,7 +663,7 @@
 		display: none;
 	}
 
-	.b-additional__school, .b-additional__school+.b-additional__text{
+	.b-additional__school, .b-additional__school+.b-additional__text, .b-additional__date{
 		display: block;
 	}
 }
