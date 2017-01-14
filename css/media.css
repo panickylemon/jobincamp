@@ -18,6 +18,11 @@
 		position: static;
 		margin: 20px 0 20px;
 	}
+
+	.b-more-button {
+		right: 15px;
+		bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 990px) {
@@ -435,6 +440,34 @@
 		width: 50%;
 	}
 
+	.b-short-card__title {
+		font-size: 20px;
+	}
+
+	.b-short-card__content {
+		margin-left: 245px;
+	}
+
+	.b-short-card__place {
+		font-size: 14px;
+	}
+
+	.b-contact__button {
+		margin: 15px 0 15px;
+	}
+
+	.b-more-button {
+		bottom: 15px;
+	}
+
+	.b-hidden-button {
+		bottom: 20px;
+	}
+
+	.b-short-card__aside {
+		padding: 20px 20px 50px;
+	}
+
 }
 
 @media screen and (max-width: 670px) {
@@ -490,6 +523,29 @@
 		margin-bottom: 13px;
 	}
 
+}
+
+@media screen and (max-width: 580px) {
+	.b-more-button {
+		position: static;
+		padding: 0 0 20px;
+	}
+
+	.b-short-card__title {
+		font-size: 18px;
+	}
+
+	.b-short-card__photo {
+		max-width: 200px;
+	}
+
+	.b-short-card__content {
+		margin-left: 220px;
+	}
+
+	.b-short-card__social-network {
+		margin: 15px 0 0;
+	}
 }
 
 @media screen and (max-width: 560px) {
@@ -569,6 +625,26 @@
 		width: 100px;
 		font-size: 14px;
 	}
+
+	.b-short-card__content {
+		margin-left: 0;
+		padding: 0 20px;
+	}
+
+	.b-short-card__image {
+		float: none;
+		max-width: 100%;
+	}
+
+	.b-short-card__photo {
+		max-width: 100%;
+	}
+
+	.b-more-button {
+		position: absolute;
+		padding: 0;
+		bottom: 22px;
+	}
 }
 
 @media screen and (max-width: 475px) {
@@ -616,6 +692,38 @@
 
 	.b-footer-social-network__instagram {
 		margin: 0 20px;
+	}
+
+	.b-contact__button {
+		width: 125px;
+	}
+
+	.b-short-card__title {
+		padding: 18px 18px 5px 0;
+	}
+
+	.b-short-card__content {
+		padding: 0 18px;
+	}
+
+	.b-contact__button {
+		margin: 15px 0 20px;
+	}
+
+	.b-more-button {
+		bottom: 27px;
+	}
+
+	.b-short-card__aside {
+		padding: 0 20px 45px;
+	}
+
+	.b-short-card__description {
+		font-size: 14px;
+	}
+
+	.b-short-card__text {
+		font-size: 14px;
 	}
 }
 
@@ -719,6 +827,15 @@
 
 	.b-useful__title {
 		font-size: 14px;
+	}
+
+    .b-search-top-panel__text, .b-search-top-panel__number{
+	    display: none;
+    }
+
+	.b-more-button {
+		position: static;
+		padding: 0 0 20px;
 	}
 
 }

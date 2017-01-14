@@ -11,6 +11,7 @@ body {
 	background-color: #fff;
 	font-family: "Open Sans", sans-serif;
 	font-weight: normal;
+	overflow-x: hidden;
 }
 
 @font-face {
