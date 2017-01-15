@@ -221,6 +221,7 @@ input.b-left-menu__input::-moz-placeholder {
 	color: #46c983;
 	font-size: 16px;
 	text-decoration: none;
+	line-height: 1.3;
 	text-align: center;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -244,7 +245,7 @@ input.b-left-menu__input::-moz-placeholder {
 	background: #46c983;
 }
 
-.b-base-button--light:hover {
+.b-base-button--light:hover, .b-base-button--light:focus {
 	border: 1px solid #46c983;
 	color: #46c983;
 	background: #ffffff;
@@ -1626,6 +1627,7 @@ footer {
 
 .b-short-card__content {
 	margin-left: 255px;
+	padding-right: 5px;
 }
 
 .b-short-card__title {
@@ -1917,31 +1919,31 @@ footer {
 	background: none;
 }
 
-.b-cars-previous__text {
+.b-card-previous__text {
 	font-size: 14px;
 	font-weight: 300;
 	color: #d0d0e8;
 }
 
-.b-cars-next__text {
+.b-card-next__text {
 	font-size: 14px;
 	font-weight: 300;
 	color: #a2a2b5;
 }
 
-.b-cars-previous, .b-cars-next {
+.b-card-previous, .b-card-next {
 	cursor: pointer;
 }
 
-.b-cars-previous:hover, .b-cars-next:hover {
+.b-card-previous:hover, .b-card-next:hover {
 	text-decoration: none;
 }
 
-.b-cars-previous:hover .b-cars-previous__text, .b-cars-next:hover .b-cars-next__text {
+.b-card-previous:hover .b-card-previous__text, .b-card-next:hover .b-card-next__text {
 	color: #46c983;
 }
 
-.b-cars-previous__icon {
+.b-card-previous__icon {
 	display: inline-block;
 	width: 12px;
 	height: 15px;
@@ -1950,7 +1952,7 @@ footer {
 	background: url("../image/sprite/arrows-left-right.png") no-repeat 0 100%;
 }
 
-.b-cars-next__icon {
+.b-card-next__icon {
 	display: inline-block;
 	width: 12px;
 	height: 15px;
@@ -1959,11 +1961,11 @@ footer {
 	background: url("../image/sprite/arrows-left-right.png") no-repeat 50% 50%;
 }
 
-.b-cars-previous:hover .b-cars-previous__icon {
+.b-card-previous:hover .b-card-previous__icon {
 	background: url("../image/sprite/arrows-left-right.png") no-repeat 90% 0;
 }
 
-.b-cars-next:hover .b-cars-next__icon {
+.b-card-next:hover .b-card-next__icon {
 	background: url("../image/sprite/arrows-left-right.png") no-repeat 98% 50%;
 }
 
@@ -1974,11 +1976,11 @@ footer {
 	height: 35px;
 }
 
-.b-cars-previous {
+.b-card-previous {
 	float: left;
 }
 
-.b-cars-next {
+.b-card-next {
 	float: right;
 }
 
@@ -2020,6 +2022,11 @@ footer {
 	padding: 0 25px;
 	background: #ffffff;
 	font-weight: 300;
+}
+
+.b-top-line__item{
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
 }
 
 .b-card-info__main {
@@ -2166,10 +2173,7 @@ footer {
 	padding: 30px 15px 0;
 }
 
-.b-top-line__item{
-	padding-bottom: 20000px;
-	margin-bottom: -20000px;
-}
+
 
 .b-card-info__top-line{
 	overflow: hidden;
