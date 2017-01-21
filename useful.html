@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Jobincamp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel='stylesheet' href='css/bootstrap-select.min.css'>
+    <link rel='stylesheet' href='owl/owl.carousel.min.css'>
+    <link rel='stylesheet' href='owl/owl.theme.default.min.css'>
+    <link rel='stylesheet' href='css/style-personal.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/media.css'>
+    <script src="js/jquery-2.0.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="owl/owl.carousel.js"></script>
+    <script src="js/simplecalendar.js"></script>
+    <script src="js/jquery.textareaAutoResize.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+<div class="l-wrapper" id="b-first">
+    <header class="b-header-base">
+        <div class="l-container">
+            <div class="b-header clearfix">
+                <a class="l-logo" href="#">
+                    <img src="image/base/logo.png" alt="логотип">
+                </a>
+
+                <div class="b-menu-burger"></div>
+                <div class="b-menu-close"></div>
+                <nav class="l-menu clearfix">
+                    <ul class="b-menu">
+                        <li class="b-menu__item">
+                            <a class="b-menu__link" href="#">вакансии</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a class="b-menu__link" href="#">резюме</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a class="b-menu__link" href="#">лагеря</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a class="b-menu__link" href="#">школы вожатых</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a class="b-menu__link b-menu__link--active" href="#">полезное</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a class="b-menu__link" href="#">о проекте</a>
+                        </li>
+                    </ul>
+                    <div class="l-menu-checkin">
+                        <a class="b-menu-checkin b-menu-checkin__enter" href="#checkin-form" data-toggle="modal">
+                            войти
+                        </a>
+                        <a class="b-menu-checkin b-menu-checkin__out" href="#">
+                            <span class="b-menu-checkin__text">выйти</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="l-useful-page clearfix">
+
+            <div class="l-container">
+
+                <div class="b-useful__top-panel clearfix">
+                    <ul class="b-article__breadcrumb b-breadcrumb breadcrumb">
+                        <li class="b-breadcrumb__item">
+                            <a class="b-breadcrumb__link" href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="b-breadcrumb__item active">Полезное</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="b-useful-page clearfix">
+
+
+                    <div class="b-useful-page__calendar-wrapper" >
+                        <div class="calendar hidden-print b-useful-page__calendar">
+                            <p class="b-calendar__title">Календарь событий</p>
+                            <header>
+                                <p class="month"></p>
+                                <a class="btn-prev fontawesome-angle-left" href="#"><</a>
+                                <a class="btn-next fontawesome-angle-right" href="#">></a>
+                            </header>
+                            <table>
+                                <tbody class="event-calendar">
+                                <tr class="1"></tr>
+                                <tr class="2"></tr>
+                                <tr class="3"></tr>
+                                <tr class="4"></tr>
+                                <tr class="5"></tr>
+                                </tbody>
+                            </table>
+                            <div class="list owl-carousel">
+                            </div>
+                            <div class="origin-list" style="display: none">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="b-useful-page__item b-useful__item">
+                        <a class="b-useful__link b-useful__link--image" href="#">
+                            <!--<p class="b-useful__date b-useful__date&#45;&#45;green">16 ноября</p>-->
+                            <img class="b-useful__image" src="image/base/useful-example.png"
+                                 alt="Работа в России">
+
+                            <p class="b-useful__title">6 секретов кулинарного мастерства от гуру китайской кухни
+                                Цао
+                                Ин
+                                Шуна
+                            </p>
+
+                            <div class="b-useful__activity b-activity">
+                                <p class="b-activity__item b-activity__view">
+                                    <span class="b-activity__icon b-activity__icon--view"></span>
+                                    <span class="b-activity__number">3456</span>
+                                </p>
+
+                                <p class="b-activity__item b-activity__reviews">
+                                    <span class="b-activity__icon b-activity__icon--reviews"></span>
+                                    <span class="b-activity__number">357</span>
+                                </p>
+
+                                <p class="b-activity__item b-activity__participant">
+                                    <span class="b-activity__icon b-activity__icon--participant"></span>
+                                    <span class="b-activity__number">67</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="b-useful-page__item b-useful__item">
+                        <a class="b-useful__link b-useful__link--image" href="#">
+                            <!--<p class="b-useful__date b-useful__date&#45;&#45;green">16 ноября</p>-->
+                            <img class="b-useful__image" src="image/base/useful-example.png"
+                                 alt="Работа в России">
+
+                            <p class="b-useful__title">6 секретов кулинарного мастерства от гуру китайской кухни
+                                Цао
+                                Ин
+                                Шуна
+                            </p>
+
+                            <div class="b-useful__activity b-activity">
+                                <p class="b-activity__item b-activity__view">
+                                    <span class="b-activity__icon b-activity__icon--view"></span>
+                                    <span class="b-activity__number">3456</span>
+                                </p>
+                                <!--<p class="b-activity__item b-activity__reviews">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;reviews"></span>-->
+                                <!--<span class="b-activity__number">357</span>-->
+                                <!--</p>-->
+                                <p class="b-activity__item b-activity__participant">
+                                    <span class="b-activity__icon b-activity__icon--participant"></span>
+                                    <span class="b-activity__number">67</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="b-useful-page__item b-useful__item">
+                        <a class="b-useful__link b-useful__link--no-image" href="#">
+                            <p class="b-useful__date b-useful__date--white">16 ноября</p>
+                            <img class="b-useful__no-image" src="image/base/useful-green.png"
+                                 alt="Работа в России">
+
+                            <p class="b-useful__title">Зачем птицы летают? Интервью Познера с Познером.
+                            </p>
+
+                            <div class="b-useful__activity b-activity">
+                                <p class="b-activity__item b-activity__view">
+                                    <span class="b-activity__icon b-activity__icon--view"></span>
+                                    <span class="b-activity__number">1</span>
+                                </p>
+                                <!--<p class="b-activity__item b-activity__reviews">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;reviews"></span>-->
+                                <!--<span class="b-activity__number">357</span>-->
+                                <!--</p>-->
+                                <!--<p class="b-activity__item b-activity__participant">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;participant"></span>-->
+                                <!--<span class="b-activity__number">67</span>-->
+                                <!--</p>-->
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="b-useful-page__item b-useful__item">
+                        <a class="b-useful__link b-useful__link--image" href="#">
+                            <!--<p class="b-useful__date b-useful__date&#45;&#45;green">16 ноября</p>-->
+                            <img class="b-useful__image" src="image/base/useful-example.png"
+                                 alt="Работа в России">
+
+                            <p class="b-useful__title">6 секретов кулинарного мастерства от гуру китайской кухни
+                                Цао
+                                Ин
+                                Шуна
+                            </p>
+
+                            <div class="b-useful__activity b-activity">
+                                <p class="b-activity__item b-activity__view">
+                                    <span class="b-activity__icon b-activity__icon--view"></span>
+                                    <span class="b-activity__number">3456</span>
+                                </p>
+
+                                <p class="b-activity__item b-activity__reviews">
+                                    <span class="b-activity__icon b-activity__icon--reviews"></span>
+                                    <span class="b-activity__number">357</span>
+                                </p>
+
+                                <p class="b-activity__item b-activity__participant">
+                                    <span class="b-activity__icon b-activity__icon--participant"></span>
+                                    <span class="b-activity__number">67</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="b-useful-page__item b-useful__item">
+                        <a class="b-useful__link b-useful__link--image" href="#">
+                            <!--<p class="b-useful__date b-useful__date&#45;&#45;green">16 ноября</p>-->
+                            <img class="b-useful__image" src="image/base/useful-example.png"
+                                 alt="Работа в России">
+
+                            <p class="b-useful__title">6 секретов кулинарного мастерства от гуру китайской кухни
+                                Цао
+                                Ин
+                                Шуна
+                            </p>
+
+                            <div class="b-useful__activity b-activity">
+                                <p class="b-activity__item b-activity__view">
+                                    <span class="b-activity__icon b-activity__icon--view"></span>
+                                    <span class="b-activity__number">3456</span>
+                                </p>
+                                <!--<p class="b-activity__item b-activity__reviews">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;reviews"></span>-->
+                                <!--<span class="b-activity__number">357</span>-->
+                                <!--</p>-->
+                                <p class="b-activity__item b-activity__participant">
+                                    <span class="b-activity__icon b-activity__icon--participant"></span>
+                                    <span class="b-activity__number">67</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="b-useful-page__item b-useful__item">
+                        <a class="b-useful__link b-useful__link--no-image" href="#">
+                            <p class="b-useful__date b-useful__date--white">16 ноября</p>
+                            <img class="b-useful__no-image" src="image/base/useful-green.png"
+                                 alt="Работа в России">
+
+                            <p class="b-useful__title">Зачем птицы летают? Интервью Познера с Познером.
+                            </p>
+
+                            <div class="b-useful__activity b-activity">
+                                <p class="b-activity__item b-activity__view">
+                                    <span class="b-activity__icon b-activity__icon--view"></span>
+                                    <span class="b-activity__number">1</span>
+                                </p>
+                                <!--<p class="b-activity__item b-activity__reviews">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;reviews"></span>-->
+                                <!--<span class="b-activity__number">357</span>-->
+                                <!--</p>-->
+                                <!--<p class="b-activity__item b-activity__participant">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;participant"></span>-->
+                                <!--<span class="b-activity__number">67</span>-->
+                                <!--</p>-->
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="b-useful-page__item b-useful__item">
+                        <a class="b-useful__link b-useful__link--image" href="#">
+                            <!--<p class="b-useful__date b-useful__date&#45;&#45;green">16 ноября</p>-->
+                            <img class="b-useful__image" src="image/base/useful-example.png"
+                                 alt="Работа в России">
+
+                            <p class="b-useful__title">6 секретов кулинарного мастерства от гуру китайской кухни
+                                Цао
+                                Ин
+                                Шуна
+                            </p>
+
+                            <div class="b-useful__activity b-activity">
+                                <p class="b-activity__item b-activity__view">
+                                    <span class="b-activity__icon b-activity__icon--view"></span>
+                                    <span class="b-activity__number">3456</span>
+                                </p>
+
+                                <p class="b-activity__item b-activity__reviews">
+                                    <span class="b-activity__icon b-activity__icon--reviews"></span>
+                                    <span class="b-activity__number">357</span>
+                                </p>
+
+                                <p class="b-activity__item b-activity__participant">
+                                    <span class="b-activity__icon b-activity__icon--participant"></span>
+                                    <span class="b-activity__number">67</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="b-useful-page__item b-useful__item">
+                        <a class="b-useful__link b-useful__link--image" href="#">
+                            <!--<p class="b-useful__date b-useful__date&#45;&#45;green">16 ноября</p>-->
+                            <img class="b-useful__image" src="image/base/useful-example.png"
+                                 alt="Работа в России">
+
+                            <p class="b-useful__title">6 секретов кулинарного мастерства от гуру китайской кухни
+                                Цао
+                                Ин
+                                Шуна
+                            </p>
+
+                            <div class="b-useful__activity b-activity">
+                                <p class="b-activity__item b-activity__view">
+                                    <span class="b-activity__icon b-activity__icon--view"></span>
+                                    <span class="b-activity__number">3456</span>
+                                </p>
+                                <!--<p class="b-activity__item b-activity__reviews">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;reviews"></span>-->
+                                <!--<span class="b-activity__number">357</span>-->
+                                <!--</p>-->
+                                <p class="b-activity__item b-activity__participant">
+                                    <span class="b-activity__icon b-activity__icon--participant"></span>
+                                    <span class="b-activity__number">67</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="b-useful-page__item b-useful__item">
+                        <a class="b-useful__link b-useful__link--no-image" href="#">
+                            <p class="b-useful__date b-useful__date--white">16 ноября</p>
+                            <img class="b-useful__no-image" src="image/base/useful-green.png"
+                                 alt="Работа в России">
+
+                            <p class="b-useful__title">Зачем птицы летают? Интервью Познера с Познером.
+                            </p>
+
+                            <div class="b-useful__activity b-activity">
+                                <p class="b-activity__item b-activity__view">
+                                    <span class="b-activity__icon b-activity__icon--view"></span>
+                                    <span class="b-activity__number">1</span>
+                                </p>
+                                <!--<p class="b-activity__item b-activity__reviews">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;reviews"></span>-->
+                                <!--<span class="b-activity__number">357</span>-->
+                                <!--</p>-->
+                                <!--<p class="b-activity__item b-activity__participant">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;participant"></span>-->
+                                <!--<span class="b-activity__number">67</span>-->
+                                <!--</p>-->
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="b-useful-page__item b-useful__item">
+                        <a class="b-useful__link b-useful__link--no-image" href="#">
+                            <p class="b-useful__date b-useful__date--green">16 ноября</p>
+                            <img class="b-useful__no-image" src="image/base/useful-grey.png"
+                                 alt="Работа в России">
+
+                            <p class="b-useful__title">Конкурс до 14 мартобря!
+                            </p>
+
+                            <div class="b-useful__activity b-activity">
+                                <p class="b-activity__item b-activity__view">
+                                    <span class="b-activity__icon b-activity__icon--view"></span>
+                                    <span class="b-activity__number">1</span>
+                                </p>
+                                <!--<p class="b-activity__item b-activity__reviews">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;reviews"></span>-->
+                                <!--<span class="b-activity__number">357</span>-->
+                                <!--</p>-->
+                                <!--<p class="b-activity__item b-activity__participant">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;participant"></span>-->
+                                <!--<span class="b-activity__number">67</span>-->
+                                <!--</p>-->
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="b-useful-page__item b-useful__item">
+                        <a class="b-useful__link b-useful__link--no-image" href="#">
+                            <p class="b-useful__date b-useful__date--white">16 ноября</p>
+                            <img class="b-useful__no-image" src="image/base/useful-green.png"
+                                 alt="Работа в России">
+
+                            <p class="b-useful__title">Зачем птицы летают? Интервью Познера с Познером.
+                            </p>
+
+                            <div class="b-useful__activity b-activity">
+                                <p class="b-activity__item b-activity__view">
+                                    <span class="b-activity__icon b-activity__icon--view"></span>
+                                    <span class="b-activity__number">1</span>
+                                </p>
+                                <!--<p class="b-activity__item b-activity__reviews">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;reviews"></span>-->
+                                <!--<span class="b-activity__number">357</span>-->
+                                <!--</p>-->
+                                <!--<p class="b-activity__item b-activity__participant">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;participant"></span>-->
+                                <!--<span class="b-activity__number">67</span>-->
+                                <!--</p>-->
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="b-useful-page__item b-useful__item">
+                        <a class="b-useful__link b-useful__link--image" href="#">
+                            <!--<p class="b-useful__date b-useful__date&#45;&#45;green">16 ноября</p>-->
+                            <img class="b-useful__image" src="image/base/useful-example.png"
+                                 alt="Работа в России">
+
+                            <p class="b-useful__title">6 секретов кулинарного мастерства от гуру китайской кухни
+                                Цао
+                                Ин
+                                Шуна
+                            </p>
+
+                            <div class="b-useful__activity b-activity">
+                                <p class="b-activity__item b-activity__view">
+                                    <span class="b-activity__icon b-activity__icon--view"></span>
+                                    <span class="b-activity__number">3456</span>
+                                </p>
+
+                                <p class="b-activity__item b-activity__reviews">
+                                    <span class="b-activity__icon b-activity__icon--reviews"></span>
+                                    <span class="b-activity__number">357</span>
+                                </p>
+
+                                <p class="b-activity__item b-activity__participant">
+                                    <span class="b-activity__icon b-activity__icon--participant"></span>
+                                    <span class="b-activity__number">67</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="b-useful-page__item b-useful__item">
+                        <a class="b-useful__link b-useful__link--image" href="#">
+                            <!--<p class="b-useful__date b-useful__date&#45;&#45;green">16 ноября</p>-->
+                            <img class="b-useful__image" src="image/base/useful-example.png"
+                                 alt="Работа в России">
+
+                            <p class="b-useful__title">6 секретов кулинарного мастерства от гуру китайской кухни
+                                Цао
+                                Ин
+                                Шуна
+                            </p>
+
+                            <div class="b-useful__activity b-activity">
+                                <p class="b-activity__item b-activity__view">
+                                    <span class="b-activity__icon b-activity__icon--view"></span>
+                                    <span class="b-activity__number">3456</span>
+                                </p>
+                                <!--<p class="b-activity__item b-activity__reviews">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;reviews"></span>-->
+                                <!--<span class="b-activity__number">357</span>-->
+                                <!--</p>-->
+                                <p class="b-activity__item b-activity__participant">
+                                    <span class="b-activity__icon b-activity__icon--participant"></span>
+                                    <span class="b-activity__number">67</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="b-useful-page__item b-useful__item">
+                        <a class="b-useful__link b-useful__link--no-image" href="#">
+                            <p class="b-useful__date b-useful__date--green">16 ноября</p>
+                            <img class="b-useful__no-image" src="image/base/useful-grey.png"
+                                 alt="Работа в России">
+
+                            <p class="b-useful__title">Конкурс до 14 мартобря!
+                            </p>
+
+                            <div class="b-useful__activity b-activity">
+                                <p class="b-activity__item b-activity__view">
+                                    <span class="b-activity__icon b-activity__icon--view"></span>
+                                    <span class="b-activity__number">1</span>
+                                </p>
+                                <!--<p class="b-activity__item b-activity__reviews">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;reviews"></span>-->
+                                <!--<span class="b-activity__number">357</span>-->
+                                <!--</p>-->
+                                <!--<p class="b-activity__item b-activity__participant">-->
+                                <!--<span class="b-activity__icon b-activity__icon&#45;&#45;participant"></span>-->
+                                <!--<span class="b-activity__number">67</span>-->
+                                <!--</p>-->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <a class="b-useful-page__download-more b-download-more" href="#"></a>
+
+        </div>
+
+
+    </main>
+
+</div>
+
+<footer>
+    <div class="l-container">
+        <div class="b-footer clearfix">
+            <a class="l-logo" href="#">
+                <img src="image/base/logo.png" alt="логотип">
+            </a>
+
+            <nav class="l-footer-menu clearfix">
+                <ul class="b-footer-menu">
+                    <li class="b-footer-menu__item">
+                        <a class="b-footer-menu__link" href="#">вакансии</a>
+                    </li>
+                    <li class="b-footer-menu__item">
+                        <a class="b-footer-menu__link" href="#">резюме</a>
+                    </li>
+                    <li class="b-footer-menu__item">
+                        <a class="b-footer-menu__link" href="#">лагеря</a>
+                    </li>
+                    <li class="b-footer-menu__item">
+                        <a class="b-footer-menu__link" href="#">школы вожатых</a>
+                    </li>
+                    <li class="b-footer-menu__item">
+                        <a class="b-footer-menu__link b-menu__link--active" href="#">полезное</a>
+                    </li>
+                    <li class="b-footer-menu__item">
+                        <a class="b-footer-menu__link" href="#">о проекте</a>
+                    </li>
+                </ul>
+                <div class="l-footer-menu-checkin">
+                    <a class="b-footer-menu-checkin b-footer-menu-checkin__enter" href="#checkin-form"
+                       data-toggle="modal">
+                        войти
+                    </a>
+                    <a class="b-footer-menu-checkin b-footer-menu-checkin__out" href="#">
+                        <span class="b-footer-menu-checkin__text">выйти</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="b-footer-filter">
+                <form class="b-search clearfix">
+                    <select name="subject" class="selectpicker b-search__subject">
+                        <option>Я ищу...</option>
+                        <option>Работу</option>
+                        <option>Сотрудника</option>
+                        <option>Школу вожатых</option>
+                    </select>
+
+                    <select name="country" class="selectpicker b-search__country">
+                        <option>Страна...</option>
+                        <option>Россия</option>
+                        <option>Бразилия</option>
+                        <option>Канада</option>
+                    </select>
+                    <input class="b-search__expand" type="search" placeholder="расширенный поиск">
+                    <input class="b-search__button" name="submit" type="submit" value="">
+                </form>
+            </div>
+
+            <div class="b-footer-contact clearfix">
+                <div class="b-footer-contact__item">
+                    <p class="b-footer-contact__email">info@jobincamp.ru</p>
+                </div>
+                <div class="b-footer-contact__item">
+                    <p class="b-footer-contact__phone">+7 812 555-55-55</p>
+                </div>
+                <div class="b-footer-contact__item">
+                    <a class="b-footer-contact__feedback" href="#feeadback-form" data-toggle="modal">обратная связь</a>
+                </div>
+            </div>
+            <div class="b-footer-social-network clearfix">
+                <div class="b-footer-social-network__item">
+                    <a class="b-footer-social-network__link b-footer-social-network__vk"></a>
+                </div>
+                <div class="b-footer-social-network__item">
+                    <a class="b-footer-social-network__link b-footer-social-network__instagram"></a>
+                </div>
+                <div class="b-footer-social-network__item">
+                    <a class="b-footer-social-network__link b-footer-social-network__facebook"></a>
+                </div>
+            </div>
+            <a class="b-scrolling-top b-scrolling-top--green" href="#b-first"></a>
+        </div>
+
+    </div>
+</footer>
+
+<div class="modal fade" id="checkin-form" tabindex="-1" role="dialog">
+    <div class="b-modal modal-dialog" role="document">
+        <a href="#" class="b-modal__close" data-dismiss="modal"></a>
+        <ul class="nav nav-tabs">
+            <li class="active b-tab-button__enter"><a class="b-tab-button" data-toggle="tab" href="#panel1">Вход</a>
+            </li>
+            <li><a class="b-tab-button" data-toggle="tab" href="#panel2">Регистрация</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="panel1" class="tab-pane fade in active">
+                <form class="b-checkin">
+
+                    <div class="b-checkin__social-network b-checkin__social-network-enter">
+                        <p class="b-checkin__text">Войти с помощью:</p>
+                        <a class="b-checkin__social-network-button b-checkin__facebook" href="#">Facebook</a>
+                        <a class="b-checkin__social-network-button b-checkin__vk" href="#">Вконтакте</a>
+                        <a class="b-checkin__social-network-button b-checkin__classmates" href="#">Одноклассники</a>
+                    </div>
+
+                    <input class="b-modal__input" placeholder="Ваш телефон или e-mail...">
+                    <input class="b-modal__input" placeholder="Пароль">
+                    <a class="b-forgot-password b-checkin__text" href="#password-form"
+                       data-toggle="modal">Забыли
+                        пароль?</a>
+
+                    <button  class="b-base-button b-modal__button" href="#">Войти</button>
+
+                    <div>
+                        <p class="b-checkin__text b-checkin__enter-text">Еще не регистрировались?</p>
+                        <a class="b-base-button b-base-button--light b-checkin__enter" data-toggle="tab"
+                           href="#panel2">зарегистрироваться</a>
+                    </div>
+
+                </form>
+            </div>
+            <div id="panel2" class="tab-pane fade">
+                <form class="b-checkin">
+                    <select name="type-user" class="selectpicker">
+                        <option>Выберите тип пользователя...</option>
+                        <option>Соискатель</option>
+                        <option>Представитель лагеря</option>
+                        <option>Представитель школы вожатского мастерства</option>
+                    </select>
+                    <input class="b-modal__input" placeholder="Введите имя пользователя">
+                    <input class="b-modal__input" placeholder="Введите ваш email">
+                    <input class="b-modal__input" placeholder="Введите пароль">
+                    <input class="b-modal__input" placeholder="Подтвердите пароль">
+                    <button class="b-base-button b-modal__button" href="#">Зарегистрироваться</button>
+
+                    <div class="b-checkin__social-network">
+                        <p class="b-checkin__text">Зарегистрироваться с помощью:</p>
+                        <a class="b-checkin__social-network-button b-checkin__facebook" href="#">Facebook</a>
+                        <a class="b-checkin__social-network-button b-checkin__vk" href="#">Вконтакте</a>
+                        <a class="b-checkin__social-network-button b-checkin__classmates" href="#">Одноклассники</a>
+                    </div>
+                    <p class="b-checkin__text b-checkin__enter-text">Уже зарегистрированы?</p>
+                    <a class="b-base-button b-base-button--light b-checkin__enter" data-toggle="tab" href="#panel1">войти</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="feeadback-form" tabindex="-1" role="dialog">
+    <div class="b-modal modal-dialog" role="document">
+        <a href="#" class="b-modal__close" data-dismiss="modal"></a>
+
+        <p class="b-title-mobal">Обратная связь</p>
+
+        <form class="b-checkin">
+
+            <input class="b-modal__input" placeholder="Вашe имя...">
+            <input class="b-modal__input" placeholder="Ваш email...">
+            <textarea class="b-modal__input b-modal__textarea" placeholder="Напишите нам...">Напишите нам...</textarea>
+
+            <button class="b-base-button b-modal__button">Отправить</button>
+
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="password-form" tabindex="-1" role="dialog">
+    <div class="b-modal modal-dialog" role="document">
+        <a href="#" class="b-modal__close" data-dismiss="modal"></a>
+
+        <p class="b-title-mobal">Восстановление пароля</p>
+
+        <form class="b-checkin">
+
+            <input class="b-modal__input" placeholder="Ваш email...">
+
+            <button class="b-base-button b-modal__button" href="#info-modal">Отправить</button>
+
+            <div class="b-checkin__text"><span>Вернуться к </span><a href="#" class="b-link-return">форме входа</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="info-modal-feedback" tabindex="-1" role="dialog">
+    <div class="b-modal b-modal-info modal-dialog" role="document">
+        <a href="#" class="b-modal__close" data-dismiss="modal"></a>
+
+        <p>Спасибо за ваше письмо!</p>
+
+        <p>Мы ответим вам в ближайшее время.</p>
+
+        <a class="b-base-button b-modal__button b-modal-info__button" href="#" data-dismiss="modal">Закрыть</a>
+    </div>
+</div>
+
+<div class="modal fade" id="map-modal" tabindex="-1" role="dialog">
+    <div class="b-modal-map modal-dialog" role="document">
+
+        <a href="#" class="b-modal__close"></a>
+
+        <div>
+            <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-AY-_5E63QuA09xm7dMBAA9vdqll6uqS&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
