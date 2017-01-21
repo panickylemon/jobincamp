@@ -83,5 +83,31 @@ $(document).ready(function ($) {
     });
 
 
+    $('textarea').autoResize();
+
+    $( "#feeadback-form" ).submit(function() {
+        $('#feeadback-form').modal('hide');
+        $('#info-modal-feedback').modal('show');
+        return false;
+    });
+
+    $( ".b-forgot-password").click(function() {
+        $('#checkin-form').modal('hide');
+        $('#password-form').modal('show');
+        return false;
+    });
+
+    $(".b-link-return").click(function() {
+        $('#password-form').modal('hide');
+        $('#checkin-form').modal('show');
+        return false;
+    });
+
+    $('#password-form').on('hidden.bs.modal', function (e) {
+        if($('.modal').hasClass('in')) {
+            $('body').addClass('modal-open');
+        }
+    });
+
 });
 
